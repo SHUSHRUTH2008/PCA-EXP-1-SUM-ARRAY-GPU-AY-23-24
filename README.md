@@ -29,7 +29,37 @@ Google Colab with NVCC Compiler
 6. Copy output data from the device to the host and verify the results against the host's sequential vector addition. Free memory on the host and the device.
 
 ## PROGRAM:
-!nvidia-smi
+## !nvidia-smi
+Tue Aug 18 16:07:34 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |
+| N/A   53C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+## !pip install nvcc4jupyter
+Collecting nvcc4jupyter
+  Downloading nvcc4jupyter-1.2.1-py3-none-any.whl.metadata (5.1 kB)
+Downloading nvcc4jupyter-1.2.1-py3-none-any.whl (10 kB)
+Installing collected packages: nvcc4jupyter
+Successfully installed nvcc4jupyter-1.2.1
+##%load_ext nvcc4jupyter
+Detected platform "Colab". Running its setup...
+Source files will be saved in "/tmp/tmp5ctqjw_i".
+
 image
 !pip install nvcc4jupyter
 image
